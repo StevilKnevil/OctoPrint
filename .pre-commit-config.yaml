@@ -15,11 +15,6 @@ repos:
     rev: v2.10.0
     hooks:
       - id: pyupgrade
-  - repo: https://github.com/OctoPrint/codemods
-    rev: devel
-    hooks:
-      - id: codemod_not_in
-        args: ["--ignore", "src/octoprint/vendor"]
   - repo: https://github.com/pre-commit/mirrors-isort
     rev: v5.5.4
     hooks:
